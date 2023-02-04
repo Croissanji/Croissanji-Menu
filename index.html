@@ -12,6 +12,7 @@
     .img{
         height: 80px;
         max-width: 80px;
+        object-fit: cover;
     }
     .tap-image{
         position: fixed;
@@ -93,14 +94,14 @@
     margin: 10px;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 150px;
+    width: 140px;
 }
 </style>
 
 <script type="text/javascript">
 
     window.onload = function() {
-    alert("ola")
+   // alert("ola")
 var images=document.getElementsByClassName('img');
 console.log(images)
     for (var i = 0 ; i < images.length; i++) {
@@ -136,6 +137,9 @@ console.log(images)
             <td style="font-size: 70px;font-weight: bold;">
                     Menu
             </td>
+            <td>
+                <img src="images/halal.png" style="height: 120px;"/>
+            </td>
         </tr>
     </table>
   </head>
@@ -148,8 +152,11 @@ console.log(images)
     <input type="button" class="nav_buttons" value="Dinner Chicken" onclick="document.getElementById('dinner_chicken').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Dinner Beef" onclick="document.getElementById('dinner_beef').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Burgers" onclick="document.getElementById('burgers').scrollIntoView();"/>
-    <input type="button" class="nav_buttons" value="Drinks" onclick="document.getElementById('drinks').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Appetizers" onclick="document.getElementById('appetizers').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Side Orders" onclick="document.getElementById('side_orders').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Desserts" onclick="document.getElementById('desserts').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Drinks" onclick="document.getElementById('drinks').scrollIntoView();"/>
+
 </div>
 <table>
     <tr>
@@ -332,7 +339,7 @@ console.log(images)
 <table>
 <tr>
 <td>
-<img class="img" src="R.jpg" alt="Cheese" >
+<img class="img" src="images/chocolate-extra.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -360,7 +367,7 @@ console.log(images)
 <table>
 <tr>
 <td>
-<img class="img" src="R.jpg" alt="Cheese" >
+<img class="img" src="images/turkey-and-cheese.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -368,6 +375,10 @@ console.log(images)
         حبش و جبنة
         
 </b></h4> 
+<p>
+    mayo, corn, lettuce, pickels</br>
+    مابونيز, ذرة, خس, كبيس
+</p>
      
   </div>
 </td>
@@ -387,7 +398,7 @@ console.log(images)
 <table>
 <tr>
 <td>
-<img class="img" src="R.jpg" alt="Cheese" >
+<img class="img" src="images/halloum.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -395,7 +406,10 @@ console.log(images)
         حلوم مشوي مع بستو
         
 </b></h4> 
-     
+     <p>
+        pesto, tomato, cucumber, lettuce, olive oil</br>
+        معجون الحبق, بندورة, خيار, خس, زيت زيتون
+     </p>
   </div>
 </td>
 <td>
@@ -415,7 +429,7 @@ console.log(images)
 <table>
 <tr>
 <td>
-<img class="img" src="R.jpg" alt="Cheese" >
+<img class="img" src="images/labneh.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
@@ -423,7 +437,10 @@ console.log(images)
         لبنة
         
 </b></h4> 
-     
+     <p>
+        oregano, tomato, cucmber, olive, lettuce, olive oil</br>
+        اوريغانو, بندورة, خيار, زيتون, خس, زيت زيتون
+     </p>
   </div>
 </td>
 <td>
@@ -442,13 +459,47 @@ console.log(images)
 <table>
 <tr>
 <td>
-<img class="img" src="R.jpg" alt="Cheese" >
+<img class="img" src="images/omlete.jpg" alt="Cheese" >
 </td>
 <td>
 <div class="container">
     <h4><b>OMLETTE</br>
         بيض
-        
+        <p>
+            tomato, cucmber, lettuce</br>
+            بندورة, خيار, خس
+        </p>
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>55,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pizza-sandwich.jpg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+    <h4><b>PIZZA SANDWICH</br>
+        سندويتش بيتزا
+        <p>
+            onions, green peppers,mushroom, double cheese, pepperoni, pizza sauce, ketchup</br>
+            بصل ، فليفلة خضراء ، فطر ، جبنة إكسترا ، بيبروني ، صلصة بيتزا ، كاتشب
+        </p>
 </b></h4> 
      
   </div>
@@ -507,7 +558,7 @@ console.log(images)
 <table>
 <tr>
 <td>
-<img class="img" src="R.jpg" alt="Chicken BBQ" >
+<img class="img" src="images/chicken-bbq.jpg" alt="Chicken BBQ" >
 </td>
 <td>
 <div class="container">
@@ -537,7 +588,7 @@ console.log(images)
 <table>
 <tr>
     <td>
-    <img class="img" src="R.jpg" alt="Chicken Sub" >
+    <img class="img" src="images/CHICKEN-SUB.jpg" alt="Chicken Sub" >
     </td>
     <td>
     <div class="container">
@@ -569,7 +620,7 @@ console.log(images)
 <table>
     <tr>
         <td>
-        <img class="img" src="R.jpg" alt="Chicken Catalina" >
+        <img class="img" src="images/chicke-catalina.jpg" alt="Chicken Catalina" >
         </td>
         <td>
         <div class="container">
@@ -602,7 +653,7 @@ console.log(images)
 <table>
         <tr>
             <td>
-            <img class="img" src="R.jpg" alt="Pepito" >
+            <img class="img" src="images/pepito.jpg" alt="Pepito" >
             </td>
             <td>
             <div class="container">
@@ -629,6 +680,38 @@ console.log(images)
         </tr>
     
        
+        <tr>
+            <td>
+               <div class="card">
+    <table>
+            <tr>
+                <td>
+                <img class="img" src="images/chicken-basil.jpg" alt="Chicken Basil" >
+                </td>
+                <td>
+                <div class="container">
+                    <h4><b>CHICKEN BASIL</br>
+                        دجاج بالحبق
+                        
+                
+                </b></h4> 
+                    <p>
+                        basil, iceberg, pickles, mayo</br>
+حبق ، خس ، كبيس ، مايونيز 
+
+                </p> 
+                  </div>
+                </td>
+                <td>
+                <p><b>145,000L.L.</b></p>
+                </td>
+                </tr>
+            </table>
+
+
+        </div>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <h2 id="dinner_beef">
@@ -653,8 +736,8 @@ console.log(images)
                         
                 </b></h4> 
                     <p>
-                        tomato, pickles, mayo mustard, lettuce</br>
-بندورة ، كبيس ، مايونيز خردل ، خس
+                        tomato, pickles, mayo mustard</br>
+بندورة ، كبيس ، مايونيز خردل 
         
                 </p> 
                   </div>
@@ -676,7 +759,7 @@ console.log(images)
         <table>
                 <tr>
                     <td>
-                    <img class="img" src="R.jpg" alt="Philly" >
+                    <img class="img" src="images/philly.jpg" alt="Philly" >
                     </td>
                     <td>
                     <div class="container">
@@ -708,7 +791,7 @@ console.log(images)
             <table>
                     <tr>
                         <td>
-                        <img class="img" src="R.jpg" alt="Kafta" >
+                        <img class="img" src="images/kafta.jpg" alt="Kafta" >
                         </td>
                         <td>
                         <div class="container">
@@ -733,6 +816,39 @@ console.log(images)
                 </div>
                         </td>
                     </tr>
+
+                    
+                <tr>
+                    <td>
+                       <div class="card">
+            <table>
+                    <tr>
+                        <td>
+                        <img class="img" src="R.jpg" alt="Kafta" >
+                        </td>
+                        <td>
+                        <div class="container">
+                            <h4><b>CROISSANJI CHEEZY SPICY BEEF</br>
+                                كرواسانجي تشيزي سبايسي بيف                                 
+                        
+                        </b></h4> 
+                            <p>
+                                onions, mushroom, green peppers, mozzarella, cheddar, lettuce, spicy croissanji mix</br>
+                                بصل ، فطر ، فليفلة خضراء ، موتزاريلا ، شيدر ، خس ، خلطة كرواسانجي الحارة
+        
+                        </p> 
+                          </div>
+                        </td>
+                        <td>
+                        <p><b>200,000L.L.</b></p>
+                        </td>
+                        </tr>
+                    </table>
+  
+  
+                </div>
+                        </td>
+                    </tr>
                 
                         <tr>
                             <td>
@@ -743,38 +859,6 @@ console.log(images)
                         </tr>
                     
                 
-                    <tr>
-                        <td>
-                           <div class="card">
-                <table>
-                        <tr>
-                            <td>
-                            <img class="img" src="R.jpg" alt="Chicken Basil" >
-                            </td>
-                            <td>
-                            <div class="container">
-                                <h4><b>CHICKEN BASIL BURGER</br>
-                                    برغر دجاج بالحبق
-                                    
-                            
-                            </b></h4> 
-                                <p>
-                                    basil, iceberg, pickles, mayo</br>
-حبق ، خس ، كبيس ، مايونيز 
-        
-                            </p> 
-                              </div>
-                            </td>
-                            <td>
-                            <p><b>145,000L.L.</b></p>
-                            </td>
-                            </tr>
-                        </table>
-  
-  
-                    </div>
-                            </td>
-                        </tr>
                     
                         <tr>
                             <td>
@@ -782,7 +866,7 @@ console.log(images)
                     <table>
                             <tr>
                                 <td>
-                                <img class="img" src="R.jpg" alt="Beef Burger" >
+                                <img class="img" src="images/beef-burger.jpg" alt="Beef Burger" >
                                 </td>
                                 <td>
                                 <div class="container">
@@ -792,8 +876,8 @@ console.log(images)
                                 
                                 </b></h4> 
                                     <p>
-                                        iceberg, tomato, onions, cheddar cheese, cocktail sauce</br>
-خس ، بندورة ، بصل ، جبنة شيدر ، صوص كوكتيل
+                                        iceberg, tomato, onions, cheddar cheese, mushroom, mustard, ketchup, bbq, pickles</br>
+خس ، بندورة ، بصل ، جبنة شيدر ، فطر ، خردل ، كاتشب ، باربيكيو ، كبيس
         
                                 </p> 
                                   </div>
@@ -810,6 +894,694 @@ console.log(images)
         </td>
     </tr>
 
+    <tr>
+        <td>
+           <div class="card">
+<table>
+        <tr>
+            <td>
+            <img class="img" src="images/double-beef-burger.jpg" alt="Beef Burger" >
+            </td>
+            <td>
+            <div class="container">
+                <h4><b>CROISSANJI DOUBLE BEEF BURGER</br>
+                    كروسانجي دبل بيف برجر
+                    
+            
+            </b></h4> 
+                <p>
+                    iceberg, carmalized onions, onion rings, mozzarella burger, bbq sauce, special croissanji mix </br>
+                    خس ، بصل مكرمل ، حلقات بصل ، موتزاريلا برجر ، صوص باربيكيو ، خلطة كرواسانجي الخاصة
+
+            </p> 
+              </div>
+            </td>
+            <td>
+            <p><b>155,000L.L.</b></p>
+            </td>
+            </tr>
+
+</table>
+
+
+</div>
+</td>
+</tr>
+
+
+    <tr>
+        <td>
+            <h2 id="appetizers">
+                Appetizers
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/fries.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>FIRES BOX</br>
+    
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>70,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/wedges.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>WEDGES BOX</br>
+    
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>70,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/onion-rings.jpeg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>ONION RINGS</br>
+      
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>70,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/mozzarella-sticks.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MOZZARRELLA STICKS</br>
+      
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>70,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h2 id="side_orders">
+                Side Orders
+            </h2>
+        </td>
+    </tr>
+   
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/cheddar.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>CHEDDAR DIP</br>
+        شيدر
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/bbq.jpg">
+</td>
+<td>
+<div class="container">
+    <h4><b>BBQ DIP</br>
+        باربيكيو 
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/mayo.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MAYO DIP</br>
+        مابونيز
+        
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/mustard.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MAYO MUSTARD DIP</br>
+        مايونيز مع خردل
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/cocktail.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>HONEY MUSTARD</br>
+        خردل مع العسل 
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/cocktail.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>GUACAMOLE</br>
+     جواكامولي
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>25,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h2 id="desserts">
+                Desserts
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>ECLAIR CREME PATISSIERE</br>
+        اكلير كريم باتسيير
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>ECLAIR CHOCOLATE</br>
+        اكلير شوكولا
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>ECLAIR LOTUS</br>
+        اكلير لوتس
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>ECLAIR OREO</br>
+        اكلير اوريو
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>DONUTS CREME PATISSIERE</br>
+        دوناتس كريم باتسيير
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>DONUTS CHOCOLATE</br>
+        دوناتس شوكولا
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>DONUTS LOTUS</br>
+        دوناتس لوتس
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>DONUTS OREO</br>
+        دوناتس اوريو
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>BABA RUM</br>
+        بابا روم
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>TART</br>
+        تارت
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>STRAWBERRY JAM FATIRA</br>
+        فطيرة مربى الفريز
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>APRICOT JAM FATIRA</br>
+        فطيرة مربى المشمش
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepsi.jpg" >
+</td>
+<td>
+<div class="container">
+    <h4><b>MUFFIN</br>
+    مفن
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>30,000L.L.</b></p>
+</td>
+</tr>
+</table>
+  
+  
+</div>
+        </td>
+    </tr>
+
+    
     <tr>
         <td>
             <h2 id="drinks">
@@ -976,182 +1748,6 @@ console.log(images)
 </td>
 <td>
 <p><b>10,000L.L.</b></p>
-</td>
-</tr>
-</table>
-  
-  
-</div>
-        </td>
-    </tr>
-
-
-    <tr>
-        <td>
-            <h2 id="side_orders">
-                Side Orders
-            </h2>
-        </td>
-    </tr>
-    <tr>
-        <td>
-           <div class="card">
-<table>
-<tr>
-<td>
-<img class="img" src="images/fries.jpg" >
-</td>
-<td>
-<div class="container">
-    <h4><b>FIRES BOX</br>
-        علبة بطاطا
-        
-</b></h4> 
-     
-  </div>
-</td>
-<td>
-<p><b>70,000L.L.</b></p>
-</td>
-</tr>
-</table>
-  
-  
-</div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-           <div class="card">
-<table>
-<tr>
-<td>
-<img class="img" src="images/cheddar.jpg" >
-</td>
-<td>
-<div class="container">
-    <h4><b>CHEDDAR DIP</br>
-        شيدر
-        
-        
-</b></h4> 
-     
-  </div>
-</td>
-<td>
-<p><b>25,000L.L.</b></p>
-</td>
-</tr>
-</table>
-  
-  
-</div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-           <div class="card">
-<table>
-<tr>
-<td>
-<img class="img" src="images/bbq.jpg">
-</td>
-<td>
-<div class="container">
-    <h4><b>BBQ DIP</br>
-        باربيكيو 
-        
-        
-</b></h4> 
-     
-  </div>
-</td>
-<td>
-<p><b>25,000L.L.</b></p>
-</td>
-</tr>
-</table>
-  
-  
-</div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-           <div class="card">
-<table>
-<tr>
-<td>
-<img class="img" src="images/mayo.jpg" >
-</td>
-<td>
-<div class="container">
-    <h4><b>MAYO DIP</br>
-        مابونيز
-        
-        
-</b></h4> 
-     
-  </div>
-</td>
-<td>
-<p><b>25,000L.L.</b></p>
-</td>
-</tr>
-</table>
-  
-  
-</div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-           <div class="card">
-<table>
-<tr>
-<td>
-<img class="img" src="images/mustard.jpg" >
-</td>
-<td>
-<div class="container">
-    <h4><b>MAYO MUSTARD DIP</br>
-        مايونيز مع خردل
-        
-</b></h4> 
-     
-  </div>
-</td>
-<td>
-<p><b>25,000L.L.</b></p>
-</td>
-</tr>
-</table>
-  
-  
-</div>
-        </td>
-    </tr>
-
-
-    <tr>
-        <td>
-           <div class="card">
-<table>
-<tr>
-<td>
-<img class="img" src="images/cocktail.jpg" >
-</td>
-<td>
-<div class="container">
-    <h4><b>COCKTAIL DIP</br>
-        كوكتيل 
-        
-</b></h4> 
-     
-  </div>
-</td>
-<td>
-<p><b>25,000L.L.</b></p>
 </td>
 </tr>
 </table>
